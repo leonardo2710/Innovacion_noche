@@ -9,8 +9,8 @@ export class SidebarService {
     titulo:'Curso Phyton',
     icono:'nav-icon fas fa-tachometer-alt',
     submenu:[
-      {titulo:'Secuenciales', url:'secuencialesphyton', icono:'fa fa-cubes'},
-      {titulo:'Condicionales', url:'condicionales_phyton', icono:'fa fa-cubes'},
+      {titulo:'Secuenciales', url:"secuencialesphyton", icono:'fa fa-cubes'},
+      {titulo:'Condicionales', url:"condicionales_phyton", icono:'fa fa-cubes'},
       {titulo:'Swicht', url:'swicht_phyton', icono:'fa fa-cubes'},
       {titulo:'For', url:'for_phyton', icono:'fa fa-cubes'},
       {titulo:'While', url:'while_phyton', icono:'fa fa-cubes'},

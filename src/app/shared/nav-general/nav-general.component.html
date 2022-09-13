@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="starter-template">
+      <div class="row">      	
+        <div class="col-md-12 mt-5">
+        <h1>Hola </h1>
+        <form [formGroup]="frm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label>Nombres y Apellidos</label>
+                    <input type="text" formControlName="preguntas" class="form-control" />
+                </div>                    
+                <div class="form-group">
+                              <label for="postre"> Postre</label>
+                              <select class="form-control" formControlName="seleccion">
+                                <option value="">Seleccionar</option>
+                                <option value="Crema Volteada">Crema Volteada</option>
+                                <option value="Gelatina de Fresa">Gelatina de Fresa</option>
+                                <option value="Keke de Naranja">Keke de Naranja</option>
+                                <option value="Pie de Manzana">Pie de Manzana</option>
+                                <option value="Torta de Chocolate">Torta de Chocolate</option>				      
+                                
+                              </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" formControlName="mensaje" rows="3" ></textarea>
+                 </div>
+                <div class="form-group">
+                    <button [disabled]="loading" class="btn btn-primary">Aceptar</button>
+                </div>
+            </form>
+      </div>
+  </div>
+ </div>
+</div>
