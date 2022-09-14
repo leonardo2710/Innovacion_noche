@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SidebarService } from 'src/app/services/sidebar.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { SidebarService } from 'src/app/services/sidebar.service';
 })
 export class SidebarComponent implements OnInit {
   menuItems?:any[];
-  constructor(private sideBarServices: SidebarService, private router:Router) {
+  constructor(private actiRoute: ActivatedRoute,private sideBarServices: SidebarService, private router:Router) {
     this.menuItems= this.sideBarServices.menu;
   
    } 
