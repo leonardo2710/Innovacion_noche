@@ -8,7 +8,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgBootstrapFormValidationModule } from 'ng-bootstrap-form-validation';
-import { NgSelectModule } from '@ng-select/ng-select';
+//import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -22,8 +22,9 @@ import { NgSelectModule } from '@ng-select/ng-select';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    
     NgBootstrapFormValidationModule.forRoot(),
-    NgSelectModule
+   
   ],
   exports: [LoginComponent, RegisterComponent],
 })

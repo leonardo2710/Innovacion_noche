@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 import { AppComponent } from './app.component';
@@ -19,10 +20,11 @@ import { PagesModule } from './pages/pages.module';
    
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     AuthModule,
     PagesModule,
+    YouTubePlayerModule
    
   ],
   providers: [],
