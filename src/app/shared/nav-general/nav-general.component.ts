@@ -7,18 +7,23 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./nav-general.component.css']
 })
 export class NavGeneralComponent implements OnInit {
-  @Input() tipo_navegacion = "";
-  public frm!: FormGroup;
-  loading = false;
-  constructor(
-    private formbuild: FormBuilder
-  ) {
+  private apiLoaded = false;
+  
+  //@Input() videoId: string;
+  
+  constructor() { }
+  ngOnInit(): void {
+  if(!this.apiLoaded) {
+  const tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  document.body.appendChild(tag);
+  this.apiLoaded = true;
    }
+}
+}
 
-  ngOnInit(){
-    this.crearFormulario();
-  }
-  crearFormulario(){
+
+  /* crearFormulario(){
     this.frm = this.formbuild.group({
       "preguntas": new FormControl('',Validators.required),
       "seleccion": new FormControl('',Validators.required),
@@ -27,5 +32,4 @@ export class NavGeneralComponent implements OnInit {
   }
   onSubmit(){
     this.loading = true;
-  }
-}
+  } */
