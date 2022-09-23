@@ -10,7 +10,7 @@ import { NavGeneralComponent } from '../shared/nav-general/nav-general.component
 const routes:Routes=[
   {path:'dashboard', component:PagesComponent,
     children:[
-      {path:'', component:DashboardComponent, data:{titulo:''}}, 
+      {path:'', component:DashboardComponent, data:{titulo:' Curso Phyton'}}, 
       {path:'secuenciales-phyton', component:NavGeneralComponent,data:{titulo:'Secuenciales Python'}},
       {path:'condicionales-phyton', component:NavGeneralComponent, data:{titulo:'Condicionales Python'}},
       {path:'swicht-phyton', component:NavGeneralComponent, data:{titulo:'Swicht Python'}},

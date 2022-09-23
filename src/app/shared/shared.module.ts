@@ -9,7 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
 import { NavGeneralComponent } from './nav-general/nav-general.component';
-
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 @NgModule({
@@ -27,14 +27,17 @@ import { NavGeneralComponent } from './nav-general/nav-general.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    TextMaskModule
+    TextMaskModule,
+    YouTubePlayerModule
   ], 
   exports:[
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
     FooterComponent,
-    NavGeneralComponent
+    NavGeneralComponent,
+    YouTubePlayerModule
+    
   ]
 })
 export class SharedModule { }
