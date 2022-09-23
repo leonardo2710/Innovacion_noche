@@ -17,7 +17,7 @@ export class SessionService {
 
     sign_up(data:any) {
     
-        return this.http.post(this.ApiUrl + 'signup', data);
+        return this.http.post(this.ApiUrl + 'register', data);
     }
   /*  changePassword(data) {
         return this.http.post(this.ApiUrl + 'resetPassword', data);

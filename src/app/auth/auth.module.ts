@@ -9,6 +9,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgBootstrapFormValidationModule } from 'ng-bootstrap-form-validation';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { SpinnerComponent } from '../shared/spinner/spinner.component';
+import { SharedModule } from '../shared/shared.module';
+
 
 
 
@@ -23,7 +26,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
     ReactiveFormsModule,
     HttpClientModule,
     NgBootstrapFormValidationModule.forRoot(),
-    NgSelectModule
+    NgSelectModule,
+    SharedModule
   ],
   exports: [LoginComponent, RegisterComponent],
 })

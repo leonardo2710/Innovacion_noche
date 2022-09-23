@@ -6,15 +6,14 @@
 
 .login-card-body,
 .login-box {
-    background-image: url('../../../assets/dist/img/fondo-plomo.jpg');
     background-position: center center;
     background-size: cover;
-    color: white
+    color: black
 }
 
 .login-box,
 a {
-    color: white;
+    color: black;
 }
 
 .social-auth-links,
@@ -23,11 +22,11 @@ a {
 }
 
 .link-pass {
-    color: white;
+    color: black;
 }
 
 .link-reg {
-    color: white;
+    color: black;
 }
 .cursor{
 cursor: pointer;

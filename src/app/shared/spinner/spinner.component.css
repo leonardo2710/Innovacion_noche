@@ -1,0 +1,24 @@
+.text {
+  z-index: 2000;
+  position: absolute;
+  font-size: 20px;
+  color: black;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: calc(50% + 10px);
+}
+
+.spinner-css{
+      position: relative  !important;
+      background-color: aliceblue !important; 
+      height: 300px !important; 
+      width: 300px !important; 
+}
+
+ngx-loading-bar {
+    position: absolute !important; 
+    background-color: aliceblue !important; 
+    height: 300px !important; 
+    width: 300px !important; 
+}

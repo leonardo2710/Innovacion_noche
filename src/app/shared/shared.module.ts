@@ -9,11 +9,23 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
 import { NavGeneralComponent } from './nav-general/nav-general.component';
+import { NgxLoadingModule } from 'ngx-loading';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { CUSTOM_ERROR_MESSAGES } from 'ng-bootstrap-form-validation';
+import { CUSTOM_ERRORS } from 'src/custom-errors';
 
 
 
 @NgModule({
+  providers: [
+    {
+      provide: CUSTOM_ERROR_MESSAGES,
+      useValue: CUSTOM_ERRORS,
+      multi: true,
+    },
+  ],
   declarations: [
+    SpinnerComponent,
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
@@ -27,14 +39,17 @@ import { NavGeneralComponent } from './nav-general/nav-general.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    TextMaskModule
+    TextMaskModule,
+    NgxLoadingModule.forRoot({}),
+   
   ], 
   exports:[
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
     FooterComponent,
-    NavGeneralComponent
+    NavGeneralComponent,
+    SpinnerComponent
   ]
 })
 export class SharedModule { }
