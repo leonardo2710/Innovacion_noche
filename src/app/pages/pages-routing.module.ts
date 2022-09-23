@@ -53,6 +53,11 @@ const routes:Routes=[
     children:[
       {path:'', component:DashboardComponent, data:{titulo:'Curso Pseint'}}, 
       {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint'}},
+      {path:'secuenciales-ejercicio1', component:NavGeneralComponent,data:{titulo:'Ejercicio 1 pseint'}},
+      {path:'secuenciales-ejercicio2', component:NavGeneralComponent,data:{titulo:'Ejercicio 2 pseint'}},
+      {path:'secuenciales-ejercicio3', component:NavGeneralComponent,data:{titulo:'Ejercicio 3 pseint'}},
+      {path:'secuenciales-ejercicio4', component:NavGeneralComponent,data:{titulo:'Ejercicio 4 pseint'}},
+      {path:'secuenciales-ejercicio5', component:NavGeneralComponent,data:{titulo:'Ejercicio 5 pseint'}},
       {path:'condicionales-pseint', component:NavGeneralComponent, data:{titulo:'Condicionales pseint'}},
       {path:'swicht-pseint', component:NavGeneralComponent, data:{titulo:'Swicht pseint'}},
       {path:'for-pseint', component:NavGeneralComponent, data:{titulo:'For pseint'}},
