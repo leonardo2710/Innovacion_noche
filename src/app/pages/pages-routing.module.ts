@@ -10,7 +10,7 @@ import { NavGeneralComponent } from '../shared/nav-general/nav-general.component
 const routes:Routes=[
   {path:'dashboard', component:PagesComponent,
     children:[
-      {path:'', component:DashboardComponent, data:{titulo:'Curso Phyton'}}, 
+      {path:'', component:DashboardComponent, data:{titulo:''}}, 
       {path:'secuenciales-phyton', component:NavGeneralComponent,data:{titulo:'Secuenciales Python'}},
       {path:'condicionales-phyton', component:NavGeneralComponent, data:{titulo:'Condicionales Python'}},
       {path:'swicht-phyton', component:NavGeneralComponent, data:{titulo:'Swicht Python'}},
@@ -27,7 +27,49 @@ const routes:Routes=[
       {path:'for-php', component:NavGeneralComponent, data:{titulo:'For PHP'}},
       {path:'while-php', component:PhytonComponent, data:{titulo:'While PHP'}}
     ]
-  }
+  },
+  {path:'dashboard', component:PagesComponent,
+    children:[
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Javascript'}}, 
+      {path:'secuenciales-javascript', component:NavGeneralComponent,data:{titulo:'Secuenciales Javascript'}},
+      {path:'condicionales-javascript', component:NavGeneralComponent, data:{titulo:'Condicionales Javascript'}},
+      {path:'swicht-javascript', component:NavGeneralComponent, data:{titulo:'Swicht Javascript'}},
+      {path:'for-javascript', component:NavGeneralComponent, data:{titulo:'For Javascript'}},
+      {path:'while-javascript', component:PhytonComponent, data:{titulo:'While Javascript'}}
+    ]
+  },
+  
+  {path:'dashboard', component:PagesComponent,
+    children:[
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Java'}}, 
+      {path:'secuenciales-java', component:NavGeneralComponent,data:{titulo:'Secuenciales Java'}},
+      {path:'condicionales-java', component:NavGeneralComponent, data:{titulo:'Condicionales Java'}},
+      {path:'swicht-java', component:NavGeneralComponent, data:{titulo:'Swicht Java'}},
+      {path:'for-java', component:NavGeneralComponent, data:{titulo:'For Java'}},
+      {path:'while-java', component:PhytonComponent, data:{titulo:'While Java'}}
+    ]
+  },
+  {path:'dashboard', component:PagesComponent,
+    children:[
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Pseint'}}, 
+      {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint'}},
+      {path:'condicionales-pseint', component:NavGeneralComponent, data:{titulo:'Condicionales pseint'}},
+      {path:'swicht-pseint', component:NavGeneralComponent, data:{titulo:'Swicht pseint'}},
+      {path:'for-pseint', component:NavGeneralComponent, data:{titulo:'For pseint'}},
+      {path:'while-pseint', component:PhytonComponent, data:{titulo:'While pseint'}}
+    ]
+  },
+  {path:'dashboard', component:PagesComponent,
+    children:[
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Visual Basic'}}, 
+      {path:'secuenciales-visual', component:NavGeneralComponent,data:{titulo:'Secuenciales Visual Basic'}},
+      {path:'condicionales-visual', component:NavGeneralComponent, data:{titulo:'Condicionales Visual Basic'}},
+      {path:'swicht-visual', component:NavGeneralComponent, data:{titulo:'Swicht Visual Basic'}},
+      {path:'for-visual', component:NavGeneralComponent, data:{titulo:'For Visual Basic'}},
+      {path:'while-visual', component:PhytonComponent, data:{titulo:'While Visual Basic'}}
+    ]
+  },
+  
 ]
 
 @NgModule({

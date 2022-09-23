@@ -3,12 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ERROR_MESSAGES } from 'ng-bootstrap-form-validation';
 import { CUSTOM_ERRORS } from 'src/custom-errors';
 import { AppRoutingModule } from './app-routing.module';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 
 import { NopageFoundComponent } from './nopage-found/nopage-found.component';
 import { PagesModule } from './pages/pages.module';
+
+
+
 
 @NgModule({
   declarations: [
@@ -17,10 +22,12 @@ import { PagesModule } from './pages/pages.module';
    
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     AuthModule,
     PagesModule,
+    YouTubePlayerModule
+   
   ],
   providers: [
     {
