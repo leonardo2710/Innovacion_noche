@@ -8,6 +8,7 @@ import { PagesComponent } from './pages/pages.component';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { PANEL_LAYOUT } from './router/dashboard-layout-routes';
+import { AuthGuard } from './services/auth.guard';
 
 
 const routes:Routes=[
