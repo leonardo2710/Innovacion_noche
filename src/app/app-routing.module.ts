@@ -14,11 +14,11 @@ const routes:Routes=[
 
   {path:'dashboard', component: PagesComponent, children:PANEL_LAYOUT },
   {path:'login', redirectTo:'/login', pathMatch:'full'},
+  {path:'register', redirectTo:'/register', pathMatch:'full'},
   {path:'**', redirectTo: '404'}
-]
+];
 
 @NgModule({
-
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),

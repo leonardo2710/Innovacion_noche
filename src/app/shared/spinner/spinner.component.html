@@ -1,0 +1,6 @@
+
+<div *ngIf="showSpinner" class="container spinner-css">
+    <ngx-loading [show]="showSpinner" [config]="config">
+    </ngx-loading>
+    <span  class="text"><b>{{ textoLoading }}</b></span>
+</div>
