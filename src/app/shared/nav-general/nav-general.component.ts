@@ -24,10 +24,12 @@ export class NavGeneralComponent implements   OnInit {
       }
  
       onResize = (): void => {
-       
-        this.videoWidth = Math.min(this.demoYouTubePlayer.nativeElement.clientWidth, 1200);
-        this.videoHeight = this.videoWidth * 0.6;
-        this._changeDetectorRef.detectChanges();
+    
+        if(this.demoYouTubePlayer != undefined && this.demoYouTubePlayer != null){
+          this.videoWidth = Math.min(this.demoYouTubePlayer.nativeElement.clientWidth, 1200);
+          this.videoHeight = this.videoWidth * 0.6;
+          this._changeDetectorRef.detectChanges();
+        }
       }
  
       ngOnDestroy(): void {
