@@ -43,7 +43,6 @@ import { CUSTOM_ERRORS } from 'src/custom-errors';
     ReactiveFormsModule,
     HttpClientModule,
     TextMaskModule,
-
     YouTubePlayerModule,
 
     NgxLoadingModule.forRoot({}),
@@ -54,9 +53,8 @@ import { CUSTOM_ERRORS } from 'src/custom-errors';
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
-    FooterComponent,
+    FooterComponent,  
     NavGeneralComponent,
-    YouTubePlayerModule,
     SpinnerComponent
 
   ]
