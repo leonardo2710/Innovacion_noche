@@ -1,0 +1,131 @@
+[33mcommit 83b770fde9b63bdeab37aa8b9e6429978c510516[m[33m ([m[1;36mHEAD -> [m[1;32mdev-David[m[33m)[m
+Author: dacota20 <64114045+dacota20@users.noreply.github.com>
+Date:   Fri Sep 23 16:40:10 2022 -0500
+
+    message
+
+[33mcommit b334685d0f31e91b544cc5b29b94ea30e6bf88d9[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: dacota20 <64114045+dacota20@users.noreply.github.com>
+Date:   Fri Sep 23 15:29:00 2022 -0500
+
+    En rutamiento del menu
+
+[33mcommit 4cdac673dd91e39a7ec966e206a730e5ec510c35[m
+Merge: d5d9574 24d7ccd
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Fri Sep 23 10:19:51 2022 -0500
+
+    Video centrado2
+
+[33mcommit d5d957477392b1de03e1ef25b2803f49283c4e09[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Fri Sep 23 09:56:38 2022 -0500
+
+    Video centrado
+
+[33mcommit 24d7ccd8b2b9d24bee342687bb188a41137ac327[m
+Merge: c61adad 6030345
+Author: Duvan9430 <45524875+Duvan9430@users.noreply.github.com>
+Date:   Fri Sep 23 00:27:07 2022 -0500
+
+    Merge pull request #3 from leonardo2710/dev-duban
+    
+    Dev duban
+
+[33mcommit 6030345f87006f33169a9693406fbf713b83091a[m[33m ([m[1;31morigin/dev-duban[m[33m)[m
+Merge: 035dbb5 c61adad
+Author: Duban Tovar <duvan9430@gmail.com>
+Date:   Fri Sep 23 00:26:22 2022 -0500
+
+    feat:merge
+
+[33mcommit 035dbb54d90a5b6f3ae21728caa10fa0dee112e7[m
+Author: Duban Tovar <duvan9430@gmail.com>
+Date:   Fri Sep 23 00:20:05 2022 -0500
+
+    feat:ajustando componentes generales para envio de informacion
+
+[33mcommit c61adad93756169ed0b787172fa8ebbff21e4d7a[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Wed Sep 21 18:02:44 2022 -0500
+
+    mostrando video
+
+[33mcommit 0807678350c32e959c34ef69f2e9298ed00cc10d[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Wed Sep 21 16:02:52 2022 -0500
+
+    unificado
+
+[33mcommit b576b0484dd27821075111af8073aa229edafcac[m
+Merge: a87a950 61e3225
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Wed Sep 21 10:50:44 2022 -0500
+
+    Agregado dato Login
+
+[33mcommit a87a950aa71c4394367b07d376b15b25985822f8[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Wed Sep 21 10:33:41 2022 -0500
+
+    actualización formuario
+
+[33mcommit 61e3225b3ead7789adaf66846f63c65714b39ad4[m
+Merge: 8db35c9 154d284
+Author: Duvan9430 <45524875+Duvan9430@users.noreply.github.com>
+Date:   Tue Sep 20 22:36:46 2022 -0500
+
+    Merge pull request #2 from leonardo2710/dev-duban
+    
+    feat:agregando servicios de logeo
+
+[33mcommit 154d28406abcb45b4634892c4014bd6c54361791[m
+Author: Duban Tovar <duvan9430@gmail.com>
+Date:   Tue Sep 20 15:58:05 2022 -0500
+
+    feat:agregando servicios de logeo
+
+[33mcommit 8db35c9a19c54e8dfd7327eac957774f43ad523a[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Tue Sep 20 09:48:34 2022 -0500
+
+    se ha completado las ventanas
+
+[33mcommit 3fded475d903ee1293af17c7f4c6614c5adaba32[m
+Author: leonardo2710 <78919352+leonardo2710@users.noreply.github.com>
+Date:   Tue Sep 20 09:42:56 2022 -0500
+
+    Completando todas las ventanas
+
+[33mcommit 76b50c33ab38c3c1a7140b1be8eb8dbe4a7c6281[m
+Merge: c5baede 70373e3
+Author: Duvan9430 <45524875+Duvan9430@users.noreply.github.com>
+Date:   Tue Sep 13 19:14:44 2022 -0500
+
+    Merge pull request #1 from leonardo2710/dev-duban
+    
+    fix:agrando rutas funcionales
+
+[33mcommit 70373e31345fa958c4c61408ed89b4b09277be49[m
+Author: Duban Tovar <duvan9430@gmail.com>
+Date:   Tue Sep 13 13:04:32 2022 -0500
+
+    fix:agrando rutas funcionales
+
+[33mcommit c5baede066d270333d94c311fcaa29df894ac103[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Mon Sep 12 08:57:34 2022 -0500
+
+    Se agrega el proyecto
+
+[33mcommit c9746f9bc9635d2b80bdf70dad08119e4298dcc9[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Tue Sep 6 20:25:09 2022 -0500
+
+    Primer commit
+
+[33mcommit 27a26dbe0dbe9af09751cf3a142e0c8707b2a018[m
+Author: leonardo2710 <lugo.leo1218@gmail.com>
+Date:   Sun Sep 4 11:37:19 2022 -0500
+
+    initial commit
