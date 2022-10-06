@@ -21,6 +21,8 @@
     "@angular/router": "^14.0.0",
     "@angular/youtube-player": "^14.2.2",
     "angular2-text-mask": "^9.0.0",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.2.2",
     "ng-bootstrap-form-validation": "^9.0.1",
     "ngx-loading": "^14.0.0",
     "rxjs": "~7.5.0",
