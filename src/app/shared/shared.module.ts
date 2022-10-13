@@ -9,13 +9,13 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
 import { NavGeneralComponent } from './nav-general/nav-general.component';
-
 import { YouTubePlayerModule } from '@angular/youtube-player';
 
 import { NgxLoadingModule } from 'ngx-loading';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { CUSTOM_ERROR_MESSAGES } from 'ng-bootstrap-form-validation';
 import { CUSTOM_ERRORS } from 'src/custom-errors';
+import { ModalPreguntasGeneralComponent } from './modal-preguntas-general/modal-preguntas-general.component';
 
 
 
@@ -34,6 +34,7 @@ import { CUSTOM_ERRORS } from 'src/custom-errors';
     BreadcrumbsComponent,
     FooterComponent,
     NavGeneralComponent,
+    ModalPreguntasGeneralComponent,
 
   ],
   imports: [
@@ -43,9 +44,7 @@ import { CUSTOM_ERRORS } from 'src/custom-errors';
     ReactiveFormsModule,
     HttpClientModule,
     TextMaskModule,
-
     YouTubePlayerModule,
-
     NgxLoadingModule.forRoot({}),
    
 
@@ -57,8 +56,8 @@ import { CUSTOM_ERRORS } from 'src/custom-errors';
     FooterComponent,
     NavGeneralComponent,
     YouTubePlayerModule,
-    SpinnerComponent
-
+    SpinnerComponent,
+    ModalPreguntasGeneralComponent
   ]
 })
 export class SharedModule { }
