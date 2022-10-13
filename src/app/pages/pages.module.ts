@@ -6,6 +6,10 @@ import { ProductosComponent } from './productos/productos.component';
 import { PagesComponent } from './pages.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { CUSTOM_ERROR_MESSAGES } from 'ng-bootstrap-form-validation';
+import { CUSTOM_ERRORS } from 'src/custom-errors';
+import { SessionService } from '../services/session.service';
+import { AuthGuard } from '../services/auth.guard';
 
 
 
