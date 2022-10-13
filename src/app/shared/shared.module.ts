@@ -53,7 +53,7 @@ import { ModalPreguntasGeneralComponent } from './modal-preguntas-general/modal-
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
-    FooterComponent,
+    FooterComponent,  
     NavGeneralComponent,
     YouTubePlayerModule,
     SpinnerComponent,
