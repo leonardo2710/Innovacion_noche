@@ -11,7 +11,7 @@ import { AuthGuard } from '../services/auth.guard';
 const routes:Routes=[
   {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
     children:[
-      {path:'', component:DashboardComponent, data:{titulo:'BIENVENIDOS SECCIÓN - TEMAS'}},
+      {path:'',component:DashboardComponent, data:{titulo:'BIENVENIDOS SECCIÓN - TEMAS'}},
     ]
   },
   {path:'dashboard',component:PagesComponent,canActivate: [AuthGuard],
