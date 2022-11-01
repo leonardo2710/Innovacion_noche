@@ -14,7 +14,7 @@ const routes:Routes=[
       {path:'', component:DashboardComponent, data:{titulo:'BIENVENIDOS SECCIÓN - TEMAS'}},
     ]
   },
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+  {path:'dashboard',component:PagesComponent,canActivate: [AuthGuard],
     children:[
 
       {path:'', component:DashboardComponent, data:{titulo:' Curso Phyton'}}, 
