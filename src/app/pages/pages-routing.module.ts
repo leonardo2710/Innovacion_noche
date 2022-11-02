@@ -9,15 +9,15 @@ import { NavGeneralComponent } from '../shared/nav-general/nav-general.component
 import { AuthGuard } from '../services/auth.guard';
 
 const routes:Routes=[
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+  {path:'dashboard', component:PagesComponent,
     children:[
       {path:'', component:DashboardComponent, data:{titulo:'BIENVENIDOS SECCIÓN - TEMAS'}},
     ]
   },
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+  {path:'dashboard',component:PagesComponent,
     children:[
 
-      {path:'', component:DashboardComponent, data:{titulo:' Curso Phyton'}}, 
+      {path:'', component:DashboardComponent, data:{titulo:' Curso Phyton'}},
       {path:'secuenciales-phyton', component:NavGeneralComponent,data:{titulo:'Secuenciales Python'}},
       {path:'condicionales-phyton', component:NavGeneralComponent, data:{titulo:'Condicionales Python'}},
       {path:'swicht-phyton', component:NavGeneralComponent, data:{titulo:'Swicht Python'}},
@@ -26,10 +26,10 @@ const routes:Routes=[
 
     ]
   },
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+  {path:'dashboard', component:PagesComponent,
     children:[
 
-      {path:'', component:DashboardComponent, data:{titulo:'Curso PhP'}}, 
+      {path:'', component:DashboardComponent, data:{titulo:'Curso PhP'}},
       {path:'secuenciales-php', component:NavGeneralComponent,data:{titulo:'Secuenciales PHP'}},
       {path:'condicionales-php', component:NavGeneralComponent, data:{titulo:'Condicionales PHP'}},
       {path:'swicht-php', component:NavGeneralComponent, data:{titulo:'Swicht PHP'}},
@@ -38,10 +38,10 @@ const routes:Routes=[
 
     ]
   },
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+  {path:'dashboard', component:PagesComponent,
     children:[
 
-      {path:'', component:DashboardComponent, data:{titulo:'Curso Javascript'}}, 
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Javascript'}},
       {path:'secuenciales-javascript', component:NavGeneralComponent,data:{titulo:'Secuenciales Javascript'}},
       {path:'condicionales-javascript', component:NavGeneralComponent, data:{titulo:'Condicionales Javascript'}},
       {path:'swicht-javascript', component:NavGeneralComponent, data:{titulo:'Swicht Javascript'}},
@@ -50,11 +50,11 @@ const routes:Routes=[
 
     ]
   },
-  
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+
+  {path:'dashboard', component:PagesComponent,
     children:[
 
-      {path:'', component:DashboardComponent, data:{titulo:'Curso Java'}}, 
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Java'}},
       {path:'secuenciales-java', component:NavGeneralComponent,data:{titulo:'Secuenciales Java'}},
       {path:'condicionales-java', component:NavGeneralComponent, data:{titulo:'Condicionales Java'}},
       {path:'swicht-java', component:NavGeneralComponent, data:{titulo:'Swicht Java'}},
@@ -63,10 +63,10 @@ const routes:Routes=[
 
     ]
   },
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+  {path:'dashboard', component:PagesComponent,
     children:[
-      {path:'', component:DashboardComponent, data:{titulo:'Curso Pseint'},canActivate: [AuthGuard]}, 
-      {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint'},canActivate: [AuthGuard]},
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Pseint'}},
+      {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint'}},
       {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint'}},
       {path:'secuenciales-ejercicio1', component:NavGeneralComponent,data:{titulo:'Ejercicio 1 pseint'}},
       {path:'secuenciales-ejercicio2', component:NavGeneralComponent,data:{titulo:'Ejercicio 2 pseint'}},
@@ -81,10 +81,10 @@ const routes:Routes=[
 
     ]
   },
-  {path:'dashboard', component:PagesComponent,canActivate: [AuthGuard],
+  {path:'dashboard', component:PagesComponent,
     children:[
 
-      {path:'', component:DashboardComponent, data:{titulo:'Curso Visual Basic'}}, 
+      {path:'', component:DashboardComponent, data:{titulo:'Curso Visual Basic'}},
       {path:'secuenciales-visual', component:NavGeneralComponent,data:{titulo:'Secuenciales Visual Basic'}},
       {path:'condicionales-visual', component:NavGeneralComponent, data:{titulo:'Condicionales Visual Basic'}},
       {path:'swicht-visual', component:NavGeneralComponent, data:{titulo:'Swicht Visual Basic'}},
@@ -93,11 +93,11 @@ const routes:Routes=[
 
     ]
   },
-  
+
 ]
 
 @NgModule({
- 
+
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
