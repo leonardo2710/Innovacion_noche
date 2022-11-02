@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
 import { NavGeneralComponent } from './nav-general/nav-general.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxLoadingModule } from 'ngx-loading';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { CUSTOM_ERROR_MESSAGES } from 'ng-bootstrap-form-validation';
@@ -40,20 +40,21 @@ import { ModalPreguntasGeneralComponent } from './modal-preguntas-general/modal-
   imports: [
     CommonModule,
     RouterModule,
+    NgbModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     TextMaskModule,
     YouTubePlayerModule,
     NgxLoadingModule.forRoot({}),
-   
 
-  ], 
+
+  ],
   exports:[
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
-    FooterComponent,  
+    FooterComponent,
     NavGeneralComponent,
     YouTubePlayerModule,
     SpinnerComponent,

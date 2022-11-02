@@ -23,10 +23,10 @@ import { SessionService } from './services/session.service';
   declarations: [
     AppComponent,
     NopageFoundComponent
-   
+
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     AppRoutingModule,
     AuthModule,
     PagesModule,
@@ -34,7 +34,7 @@ import { SessionService } from './services/session.service';
     ReactiveFormsModule,
     HttpClientModule,
     NgBootstrapFormValidationModule.forRoot(),
-   
+
   ],
   providers: [
     SessionService, AuthGuard,
