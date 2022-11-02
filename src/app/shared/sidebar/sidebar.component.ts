@@ -13,8 +13,8 @@ export class SidebarComponent implements OnInit {
   nombreUsuario:any = "Nombre Usuario";
   constructor(private actiRoute: ActivatedRoute,private sideBarServices: SidebarService, private router:Router,private auth:SessionService,) {
     this.menuItems= this.sideBarServices.menu;
-  
-   } 
+
+   }
 
   ngOnInit(): void {
     this.obtenerUsuarioLogiado();
@@ -31,12 +31,12 @@ export class SidebarComponent implements OnInit {
 
       this.auth.toggleLogin(false);
       // Redirect
-      this.router.navigateByUrl('/login'); 
+      this.router.navigateByUrl('/login');
     }, (err) =>{
       console.log(err)
     })
-  
- 
   }
-
+  actividades(){
+    this.router.navigateByUrl('/actividades-componente');
+  }
 }
