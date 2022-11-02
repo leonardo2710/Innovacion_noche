@@ -6,6 +6,7 @@
     <a href="dashboard" class="brand-text font-weight-wihte">MENÚ PRINCIPAL</a>
   </a>
 
+
   <!-- Sidebar -->
   <div class="sidebar">
     <!-- Sidebar user (optional) -->
@@ -17,313 +18,74 @@
         <a href="dashboard" class="d-block">{{ nombreUsuario }} </a>
       </div>
     </div>
-
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p class="ml-2">
-              Curso PseInt
-              <span class="badge badge-warning ml-2">5</span>
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p class="ml-2">
-                  Secuencialess
-                  <span class="badge badge-warning ml-2">50</span>
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item" >
-                  <a [routerLink]="'secuenciales-ejercicio1'" class="nav-link" style="cursor: pointer;">
-                    <i class="fa fa-cubes"></i>
-                    <p class="ml-2">Ejercicio 1</p>
-                  </a>
-                </li>
-                <li class="nav-item" >
-                  <a [routerLink]="'secuenciales-ejercicio2'" class="nav-link" style="cursor: pointer;">
-                    <i class="fa fa-cubes"></i>
-                    <p class="ml-2">Ejercicio 2</p>
-                  </a>
-                </li>  
-                <li class="nav-item" >
-                  <a [routerLink]="'secuenciales-ejercicio3'" class="nav-link" style="cursor: pointer;">
-                    <i class="fa fa-cubes"></i>
-                    <p class="ml-2">Ejercicios Generales</p>
-                  </a>
-                </li>  
-                <li class="nav-item" >
-                  <a [routerLink]="'secuenciales-ejercicio4'" class="nav-link" style="cursor: pointer;">
-                    <i class="fa fa-cubes"></i>
-                    <p class="ml-2">Talleres</p>
-                  </a> 
-                </li>  
-                <li class="nav-item" >
-                  <a [routerLink]="'secuenciales-ejercicio4'" class="nav-link" style="cursor: pointer;">
-                    <i class="fa fa-cubes"></i>
-                    <p class="ml-2">Talleres</p>
-                  </a>
-                </li>              
-              </ul>
-            </li>
-
-
-            <li class="nav-item" >
-              <a [routerLink]="'condicionales-pseint'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Condicionales</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'swicht-pseint'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Swicht</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'for-pseint'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">For</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'while-pseint'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">While</p>
-              </a>
-            </li>              
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p class="ml-2">
-              Curso Visual Basic
-              <span class="badge badge-warning ml-2">5</span>
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item" >
-              <a [routerLink]="'secuenciales-visual'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Secuenciales</p>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a [routerLink]="'condicionales-visual'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Condicionales</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'swicht-visual'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Swicht</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'for-visual'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">For</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'while-visual'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">While</p>
-              </a>
-            </li>              
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p class="ml-2">
-              Curso Java
-              <span class="badge badge-warning ml-2">5</span>
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item" >
-              <a [routerLink]="'secuenciales-java'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Secuenciales</p>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a [routerLink]="'condicionales-java'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Condicionales</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'swicht-java'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Swicht</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'for-java'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">For</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'while-java'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">While</p>
-              </a>
-            </li>              
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p class="ml-2">
-              Curso Phyton
-              <span class="badge badge-warning ml-2">5</span>
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item" >
-              <a [routerLink]="'secuenciales-phyton'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Secuenciales</p>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a [routerLink]="'condicionales-phyton'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Condicionales</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'swicht-phyton'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Swicht</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'for-phyton'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">For</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'while-phyton'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">While</p>
-              </a>
-            </li>              
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p class="ml-2">
-              Curso JavaScript
-              <span class="badge badge-warning ml-2">5</span>
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item" >
-              <a [routerLink]="'secuenciales-javascript'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Secuenciales</p>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a [routerLink]="'condicionales-javascript'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Condicionales</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'swicht-javascript'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Swicht</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'for-javascript'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">For</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'while-javascript'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">While</p>
-              </a>
-            </li>              
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p class="ml-2">
-              Curso PHP
-              <span class="badge badge-warning ml-2">5</span>
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item" >
-              <a [routerLink]="'secuenciales-php'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Secuenciales</p>
-              </a>
-            </li>
-            <li class="nav-item" >
-              <a [routerLink]="'condicionales-php'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Condicionales</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'swicht-php'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">Swicht</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'for-php'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">For</p>
-              </a>
-            </li>  
-            <li class="nav-item" >
-              <a [routerLink]="'while-php'" class="nav-link" style="cursor: pointer;">
-                <i class="fa fa-cubes"></i>
-                <p class="ml-2">While</p>
-              </a>
-            </li>              
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  style="cursor: pointer;" (click)="logout()">
-            <i class="nav-icon fas fa-sign-out-alt"></i>
-            <p class="ml-2">
-              Logout
-            </p>
-          </a>
-        </li>         
+        <div class="accordion accordion-flush " id="accordionPanelsStayOpenExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <i class="nav-icon fas fa-tachometer-alt"></i>&nbsp;&nbsp; Curso PseInt
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse  accordion-flush flex-column " aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne2" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne2">
+                    Secuenciales
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne2">
+                  <div class="accordion-body">
+                    <button class=" btn btn-link fcc-btn" type="button" aria-expanded="true" [routerLink]="'secuenciales-ejercicio1'">
+                        Videos
+                    </button>
+                  </div>
+                </div>
+                <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne2">
+                  <div class="accordion-body">
+                    <button class=" btn btn-link fcc-btn" type="button" aria-expanded="true" [routerLink]="'secuenciales-ejercicio2'">
+                        Talleres
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- Visual  Basic -->
+          <div class="accordion-item ">
+            <h2 class="accordion-header" id="panel2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel2-collapse" aria-expanded="true" aria-controls="panel2-collapse">
+                <i class="nav-icon fas fa-tachometer-alt"></i>&nbsp;&nbsp; Curso Visual Basic
+              </button>
+            </h2>
+            <div id="panel2-collapse" class="accordion-collapse collapse  accordion-flush flex-column " aria-labelledby="panel2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="subpanel2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subpanel2-collapse" aria-expanded="true" aria-controls="subpanel2-collapse">
+                    Secuenciales
+                  </button>
+                </h2>
+                <div id="subpanel2-collapse" class="accordion-collapse collapse " aria-labelledby="subpanel2">
+                  <div class="accordion-body">
+                    <button class=" btn btn-link fcc-btn" type="button" aria-expanded="true" [routerLink]="'secuenciales-ejercicio1'">
+                        Ejercicios 1
+                    </button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cerrar Session -->
+          <div class="accordion-item ">
+            <h2 class="accordion-header" >
+              <button class="btn btn-link fcc-btn" type="button" aria-expanded="true"  (click)="logout()" aria-controls="panel2-collapse">
+                &nbsp;&nbsp;<i class="nav-icon fas fa-sign-out-alt"></i>&nbsp;&nbsp; Cerrar sesión
+              </button>
+            </h2>
+          </div>
+        </div>
       </ul>
     </nav>
-    <!-- /.sidebar-menu -->
   </div>
-  <!-- /.sidebar -->
 </aside>
