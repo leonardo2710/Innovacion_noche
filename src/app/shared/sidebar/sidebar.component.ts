@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SessionService } from 'src/app/services/session.service';
 import { SidebarService } from 'src/app/services/sidebar.service';
-import { PdfMakeWrapper , Txt } from 'pdfmake-wrapper';
+
+import { PdfMakeWrapper ,  Img } from 'pdfmake-wrapper';
+
 
 
 @Component({
@@ -42,13 +44,30 @@ export class SidebarComponent implements OnInit {
     this.router.navigateByUrl('/actividades-componente');
   }
 
-  generatePDF(variable){
-  console.log(variable)
-    const pdf = new PdfMakeWrapper();
-  
-    pdf.add( new Txt('Innovacion lo mejor').color('blue').end );
 
-    pdf.create().open();
+  async generatePDF(tipoActividad){
+
+
+    const pdf = new PdfMakeWrapper();
+    if(tipoActividad == 1){
+     pdf.add (await new Img('../../../assets/dist/img/secuenciales1.png').build()
+     /* .alignment('center')
+     .relativePosition(0, 74).end, */
+     )
+    }if(tipoActividad == 2){
+      pdf.add( await new Img('../../../assets/dist/img/anidados.png').build());
+      
+    }if(tipoActividad == 3){
+      pdf.add
+      ( await new Img('../../../assets/dist/img/ciclo1.PNG').build()),
+      ( await new Img('../../../assets/dist/img/ciclo2.png').build()),
+      ( await new Img('../../../assets/dist/img/ciclo3.png').build()),
+      ( await new Img('../../../assets/dist/img/ciclo4.png').build()),
+      ( await new Img('../../../assets/dist/img/ciclo4.png').build())
+    }
+    
+
+pdf.create().open();
+  }
 
 }
-} 
