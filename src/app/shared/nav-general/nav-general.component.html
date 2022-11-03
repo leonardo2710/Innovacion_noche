@@ -4,7 +4,7 @@
     <h1><strong class="mt-4">Video De Aprendizaje</strong></h1>
     <ng-container *ngIf="frmcargando === false">
         <youtube-player
-          videoId="goNyvVYw8d4"
+          videoId="{{ texto }}"
           [height]="250"
           [width]="500"
           (ready)="lectura($event)"

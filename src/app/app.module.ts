@@ -15,14 +15,16 @@ import { NopageFoundComponent } from './nopage-found/nopage-found.component';
 import { PagesModule } from './pages/pages.module';
 import { AuthGuard } from './services/auth.guard';
 import { SessionService } from './services/session.service';
-
+import { TallerBasicoComponent } from './shared/taller-basico/taller-basico.component'; 
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NopageFoundComponent
+    NopageFoundComponent,
+    TallerBasicoComponent
+  
 
   ],
   imports: [

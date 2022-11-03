@@ -7,11 +7,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 //import { PhytonComponent } from './phyton/phyton.component';
 import { NavGeneralComponent } from '../shared/nav-general/nav-general.component';
 import { AuthGuard } from '../services/auth.guard';
+import { TallerBasicoComponent } from '../shared/taller-basico/taller-basico.component';
 
 const routes:Routes=[
+  //LOS PARAMETROS IDS SON LOS MISMO QUE ESTAN GUARDADOS EN BASE DATOS
   {path:'dashboard', component:PagesComponent,
     children:[
-      {path:'', component:DashboardComponent, data:{titulo:'BIENVENIDOS SECCIÓN - TEMAS'}},
+      {path:'',component:DashboardComponent, data:{titulo:'BIENVENIDOS SECCIÓN - TEMAS'}},
     ]
   },
   {path:'dashboard',component:PagesComponent,
@@ -55,19 +57,18 @@ const routes:Routes=[
     children:[
 
       {path:'', component:DashboardComponent, data:{titulo:'Curso Java'}},
-      {path:'secuenciales-java', component:NavGeneralComponent,data:{titulo:'Secuenciales Java'}},
-      {path:'condicionales-java', component:NavGeneralComponent, data:{titulo:'Condicionales Java'}},
+      {path:'secuenciales-java', component:NavGeneralComponent,data:{titulo:'Secuenciales Java', id:5}},
+      {path:'condicionales-java', component:NavGeneralComponent, data:{titulo:'Condicionales Java', id:6}},
       {path:'swicht-java', component:NavGeneralComponent, data:{titulo:'Swicht Java'}},
-      {path:'for-java', component:NavGeneralComponent, data:{titulo:'For Java'}},
-      {path:'while-java', component:NavGeneralComponent, data:{titulo:'While Java'}}
+      {path:'for-java', component:NavGeneralComponent, data:{titulo:'For Java', id:7}},
+      {path:'while-java', component:NavGeneralComponent, data:{titulo:'While Java', id:8}}
 
     ]
   },
   {path:'dashboard', component:PagesComponent,
     children:[
       {path:'', component:DashboardComponent, data:{titulo:'Curso Pseint'}},
-      {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint'}},
-      {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint'}},
+      {path:'secuenciales-pseint', component:NavGeneralComponent,data:{titulo:'Secuenciales pseint', id:1}},
       {path:'secuenciales-ejercicio1', component:NavGeneralComponent,data:{titulo:'Ejercicio 1 pseint'}},
       {path:'secuenciales-ejercicio2', component:NavGeneralComponent,data:{titulo:'Ejercicio 2 pseint'}},
       {path:'secuenciales-ejercicio3', component:NavGeneralComponent,data:{titulo:'Ejercicio 3 pseint'}},
@@ -90,6 +91,16 @@ const routes:Routes=[
       {path:'swicht-visual', component:NavGeneralComponent, data:{titulo:'Swicht Visual Basic'}},
       {path:'for-visual', component:NavGeneralComponent, data:{titulo:'For Visual Basic'}},
       {path:'while-visual', component:NavGeneralComponent, data:{titulo:'While Visual Basic'}}
+
+    ]
+  },
+  {path:'dashboard', component:PagesComponent,
+    children:[
+
+      {path:'', component:DashboardComponent, data:{titulo:'Taller Practico'}},
+      {path:'secuenciales-practico', component:TallerBasicoComponent,data:{titulo:'Taller Practico Secuenciales'}},
+      {path:'condicionales-practico', component:TallerBasicoComponent,data:{titulo:'Taller Practico Condicionales'}},
+      {path:'ciclos-practico', component:TallerBasicoComponent,data:{titulo:'Taller Practico Ciclos'}},
 
     ]
   },
