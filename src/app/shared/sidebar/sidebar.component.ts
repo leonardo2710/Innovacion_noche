@@ -48,6 +48,7 @@ export class SidebarComponent implements OnInit {
     if(tipoActividad == 1){
       pdf.add( await new Img('../../../assets/dist/img/secuenciales.PNG').build());
     }
+
     pdf.create().open();
 
   }

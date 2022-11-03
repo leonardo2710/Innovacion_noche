@@ -3,7 +3,10 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnInit, ViewChild,OnDestroy} from '@angular/core';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { ModalPreguntasGeneralComponent } from '../modal-preguntas-general/modal-preguntas-general.component';
-
+import { ActivationEnd, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import {map, filter} from 'rxjs/operators';
+import { serviciosGeneralService } from 'src/app/services/serviciosGeneral.service';
 @Component({
   selector: 'app-nav-general',
   templateUrl: './nav-general.component.html',
@@ -19,10 +22,17 @@ export class NavGeneralComponent implements   OnInit {
     public videoFinal: number = 10;
     public autoplay: any = {controls: 0,mute: 0,autoplay: 1};
     frmcargando = true;
-    constructor(private _changeDetectorRef: ChangeDetectorRef,private modalService: NgbModal) { }
+    public tituloSubs$:Subscription;
+    public arrayVideos = [];
+    constructor(private _changeDetectorRef: ChangeDetectorRef,private modalService: NgbModal,private router:Router, private serviciosGeneralServices: serviciosGeneralService) {
+      this.tituloSubs$ = this.getArgumentos().subscribe(({id})=>{
+            this.idTema = id;
+      })
+    }
 
     ngOnInit(): void {
       this.frmcargando = false;
+      this.getVideos();
     }
 
     ngAfterViewInit(): void {
@@ -31,7 +41,7 @@ export class NavGeneralComponent implements   OnInit {
     }
 
     onResize = (): void => {
-  
+
       if(this.demoYouTubePlayer != undefined && this.demoYouTubePlayer != null){
         this.videoWidth = Math.min(this.demoYouTubePlayer.nativeElement.clientWidth, 1200);
         this.videoHeight = this.videoWidth * 0.6;
@@ -62,11 +72,11 @@ export class NavGeneralComponent implements   OnInit {
           };
           this.frmcargando = false;
         }
-        
+
       });
-    
+
      }else{
-      this.frmcargando = false; 
+      this.frmcargando = false;
      }
     }
     lectura(event:any){
@@ -74,5 +84,25 @@ export class NavGeneralComponent implements   OnInit {
     }
     ngOnDestroy(): void {
       window.removeEventListener('resize', this.onResize);
+    }
+    getArgumentos(){
+
+      return this.router.events.pipe(
+
+        filter((event:any) => event instanceof ActivationEnd),
+        filter((event:ActivationEnd)=> event.snapshot.firstChild === null),
+        map((event:ActivationEnd)=> event.snapshot.data)
+
+      );
+
+    }
+
+    getVideos(){
+      this.arrayVideos = [];
+      this.serviciosGeneralServices.getVideos(this.idTema).subscribe(
+        (response:any) => {
+          console.log(response[0].url_videos)
+        }
+      );
     }
 }
