@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SessionService } from 'src/app/services/session.service';
 import { SidebarService } from 'src/app/services/sidebar.service';
-import { PdfMakeWrapper , Txt, Img } from 'pdfmake-wrapper';
+import { PdfMakeWrapper ,  Img } from 'pdfmake-wrapper';
 
 
 @Component({
@@ -42,15 +42,13 @@ export class SidebarComponent implements OnInit {
     this.router.navigateByUrl('/actividades-componente');
   }
 
-  async generatePDF(variable){
-  console.log(variable)
-    const pdf = new PdfMakeWrapper();
-  
-    pdf.add( await new Img('').build())
+  async generatePDF(tipoActividad){
 
+    const pdf = new PdfMakeWrapper();
+    if(tipoActividad == 1){
+      pdf.add( await new Img('../../../assets/dist/img/secuenciales.PNG').build());
+    }
     pdf.create().open();
 
-    
-
+  }
 }
-} 
