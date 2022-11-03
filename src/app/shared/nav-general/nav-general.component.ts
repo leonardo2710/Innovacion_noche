@@ -24,6 +24,7 @@ export class NavGeneralComponent implements   OnInit {
     frmcargando = true;
     public tituloSubs$:Subscription;
     public arrayVideos = [];
+    public texto:any;
     constructor(private _changeDetectorRef: ChangeDetectorRef,private modalService: NgbModal,private router:Router, private serviciosGeneralServices: serviciosGeneralService) {
       this.tituloSubs$ = this.getArgumentos().subscribe(({id})=>{
             this.idTema = id;
@@ -101,7 +102,7 @@ export class NavGeneralComponent implements   OnInit {
       this.arrayVideos = [];
       this.serviciosGeneralServices.getVideos(this.idTema).subscribe(
         (response:any) => {
-          console.log(response[0].url_videos)
+          this.texto = response[0].url_videos;
         }
       );
     }
