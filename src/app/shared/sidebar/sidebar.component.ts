@@ -65,7 +65,9 @@ export class SidebarComponent implements OnInit {
       ( await new Img('../../../assets/dist/img/ciclo4.png').build()),
       ( await new Img('../../../assets/dist/img/ciclo4.png').build())
     }
-    
+
+    pdf.create().open();
+
 
 pdf.create().open();
   }
