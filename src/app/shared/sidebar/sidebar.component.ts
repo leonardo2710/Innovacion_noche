@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SessionService } from 'src/app/services/session.service';
 import { SidebarService } from 'src/app/services/sidebar.service';
+import { PdfMakeWrapper , Txt, Img } from 'pdfmake-wrapper';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -39,4 +41,16 @@ export class SidebarComponent implements OnInit {
   actividades(){
     this.router.navigateByUrl('/actividades-componente');
   }
+
+  async generatePDF(variable){
+  console.log(variable)
+    const pdf = new PdfMakeWrapper();
+  
+    pdf.add( await new Img('').build())
+
+    pdf.create().open();
+
+    
+
 }
+} 

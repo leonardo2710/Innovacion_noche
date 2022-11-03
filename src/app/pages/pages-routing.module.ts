@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 //import { PhytonComponent } from './phyton/phyton.component';
 import { NavGeneralComponent } from '../shared/nav-general/nav-general.component';
 import { AuthGuard } from '../services/auth.guard';
+import { TallerBasicoComponent } from '../shared/taller-basico/taller-basico.component';
 
 const routes:Routes=[
   {path:'dashboard', component:PagesComponent,
@@ -90,6 +91,16 @@ const routes:Routes=[
       {path:'swicht-visual', component:NavGeneralComponent, data:{titulo:'Swicht Visual Basic'}},
       {path:'for-visual', component:NavGeneralComponent, data:{titulo:'For Visual Basic'}},
       {path:'while-visual', component:NavGeneralComponent, data:{titulo:'While Visual Basic'}}
+
+    ]
+  },
+  {path:'dashboard', component:PagesComponent,
+    children:[
+
+      {path:'', component:DashboardComponent, data:{titulo:'Taller Practico'}},
+      {path:'secuenciales-practico', component:TallerBasicoComponent,data:{titulo:'Taller Practico Secuenciales'}},
+      {path:'condicionales-practico', component:TallerBasicoComponent,data:{titulo:'Taller Practico Condicionales'}},
+      {path:'ciclos-practico', component:TallerBasicoComponent,data:{titulo:'Taller Practico Ciclos'}},
 
     ]
   },

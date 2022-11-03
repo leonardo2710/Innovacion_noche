@@ -17,6 +17,13 @@ import { CUSTOM_ERROR_MESSAGES } from 'ng-bootstrap-form-validation';
 import { CUSTOM_ERRORS } from 'src/custom-errors';
 import { ModalPreguntasGeneralComponent } from './modal-preguntas-general/modal-preguntas-general.component';
 
+import { PdfMakeWrapper } from 'pdfmake-wrapper';
+import * as pdfFonts from "pdfmake/build/vfs_fonts"; // fonts provided for pdfmake
+
+PdfMakeWrapper.setFonts(pdfFonts);
+
+
+
 
 
 @NgModule({
@@ -47,6 +54,8 @@ import { ModalPreguntasGeneralComponent } from './modal-preguntas-general/modal-
     TextMaskModule,
     YouTubePlayerModule,
     NgxLoadingModule.forRoot({}),
+    
+
 
 
   ],
