@@ -16,7 +16,11 @@ const routes:Routes=[
       {path:'',component:DashboardComponent, data:{titulo:'BIENVENIDOS SECCIÓN - TEMAS'}},
     ]
   },
-  {path:'dashboard',component:PagesComponent,
+
+
+
+  {path:'dashboard',component:PagesComponent,canActivate: [AuthGuard],
+
     children:[
 
       {path:'', component:DashboardComponent, data:{titulo:' Curso Phyton'}},
@@ -62,6 +66,7 @@ const routes:Routes=[
       {path:'swicht-java', component:NavGeneralComponent, data:{titulo:'Swicht Java'}},
       {path:'for-java', component:NavGeneralComponent, data:{titulo:'For Java', id:7}},
       {path:'while-java', component:NavGeneralComponent, data:{titulo:'While Java', id:8}}
+
 
     ]
   },
