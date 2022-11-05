@@ -75,11 +75,9 @@ const routes:Routes=[
       {path:'secuenciales-ejercicio4', component:NavGeneralComponent,data:{titulo:'Ejercicio 4 pseint'}},
       {path:'secuenciales-ejercicio5', component:NavGeneralComponent,data:{titulo:'Ejercicio 5 pseint'}},
       {path:'condicionales-pseint', component:NavGeneralComponent, data:{titulo:'Condicionales pseint'}},
-
       {path:'swicht-pseint', component:NavGeneralComponent, data:{titulo:'Swicht pseint'}},
       {path:'for-pseint', component:NavGeneralComponent, data:{titulo:'For pseint'}},
       {path:'while-pseint', component:NavGeneralComponent, data:{titulo:'While pseint'}}
-
     ]
   },
   {path:'dashboard', component:PagesComponent,
