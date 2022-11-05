@@ -78,7 +78,6 @@ const routes:Routes=[
       {path:'swicht-pseint', component:NavGeneralComponent, data:{titulo:'Swicht pseint'}},
       {path:'for-pseint', component:NavGeneralComponent, data:{titulo:'For pseint'}},
       {path:'while-pseint', component:NavGeneralComponent, data:{titulo:'While pseint'}}
-
     ]
   },
   {path:'dashboard', component:PagesComponent,
