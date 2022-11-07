@@ -2,6 +2,45 @@
     <div class="card-body ">
         <p class="login-box-msg">Preguntas</p>
         <cargando [showSpinner]="frmcargando"></cargando>
+      <!--  <ng-container *ngFor="let data of ArrayPreguntas ">
+          <div class="form-row">
+              <div class="form-group col-md-12">
+                <label class="col-form-label col-form-label-sm mr-2" > {{ data.preguntas }}</label>
+                <br>
+                <select class="form-control" id="{{ data.preguntas_id }}"(change)="validarValor($event)"
+                [(ngModel)]="seleccionado">
+                <option [value]="item.id"
+                    *ngFor="let item of array1">
+                    <label *ngIf="item.preguntas_id == data.preguntas_id">{{item.respuestas}}</label>
+                </option>
+            </select>
+              </div>
+          </div>
+        </ng-container>-->
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label class="col-form-label col-form-label-sm mr-2" > {{ ArrayPreguntas[0].preguntas }}</label>
+            <br>
+            <select class="form-control" id="{{ ArrayPreguntas[0].preguntas_id }}"(change)="validarValor($event)"
+            [(ngModel)]="seleccionado">
+              <option [value]="item.id"
+                  *ngFor="let item of array1">
+                  <label >{{item.respuestas}}</label>
+              </option>
+            </select>
+          </div>
+          <div class="form-group col-md-12">
+            <label class="col-form-label col-form-label-sm mr-2" > {{ ArrayPreguntas[1].preguntas }}</label>
+            <br>
+            <select class="form-control" id="{{ ArrayPreguntas[1].preguntas_id }}"(change)="validarValor($event)"
+            [(ngModel)]="seleccionado2">
+              <option [value]="item.id"
+                  *ngFor="let item of array2">
+                  <label >{{item.respuestas}}</label>
+              </option>
+            </select>
+          </div>
+      </div>
         <div class="col-4">
             <button type="submit" (click)="cerrarModal()" class="btn btn-outline-danger btn-block">Cerrar</button>
         </div>
