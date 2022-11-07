@@ -54,7 +54,7 @@ PdfMakeWrapper.setFonts(pdfFonts);
     TextMaskModule,
     YouTubePlayerModule,
     NgxLoadingModule.forRoot({}),
-    
+
 
 
 

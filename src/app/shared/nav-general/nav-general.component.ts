@@ -24,6 +24,8 @@ export class NavGeneralComponent implements   OnInit {
     frmcargando = true;
     public tituloSubs$:Subscription;
     public arrayVideos = [];
+    public arrayPreguntas:any;
+    public arrayIdsPreguntas:any;
     public texto:any;
     constructor(private _changeDetectorRef: ChangeDetectorRef,private modalService: NgbModal,private router:Router, private serviciosGeneralServices: serviciosGeneralService) {
       this.tituloSubs$ = this.getArgumentos().subscribe(({id})=>{
@@ -61,6 +63,8 @@ export class NavGeneralComponent implements   OnInit {
       });
       this.modal.componentInstance.id = this.idTema;
       this.modal.componentInstance.frmcargando = true;
+      this.modal.componentInstance.ArrayPreguntas = this.arrayPreguntas;
+      this.modal.componentInstance.arrayIdsPreguntas = this.arrayIdsPreguntas;
       /* Evento que se ejecuta despues de guardar o cancelar en el modal */
       this.modal.result.then(async (result) => {
         if (result == true) {
@@ -103,6 +107,21 @@ export class NavGeneralComponent implements   OnInit {
       this.serviciosGeneralServices.getVideos(this.idTema).subscribe(
         (response:any) => {
           this.texto = response[0].url_videos;
+          this.getObtenerPreguntas();
+        }
+      );
+    }
+    getObtenerPreguntas(){
+      this.arrayPreguntas = [];
+      this.arrayIdsPreguntas = [];
+      this.serviciosGeneralServices.getVideosPreguntas(this.idTema).subscribe(
+        (response:any) => {
+          if(response.length > 0 ){
+            response.forEach(element => {
+              this.arrayPreguntas.push(element);
+              this.arrayIdsPreguntas.push(Number(element.preguntas_id));
+            });
+          }
         }
       );
     }
